@@ -11,6 +11,9 @@ const quantSlice = createSlice({
     decrement(state) {
       state.quantity = state.quantity - 1;
     },
+    cardShow(state) {
+      state.isQuantityShown = !state.isQuantityShown;
+    },
   },
 });
 
